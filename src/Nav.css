@@ -1,0 +1,96 @@
+.heading {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 33333;
+  background:rgba(0,0,0,0.9);
+  padding:1rem 0;
+  transition: all 1s ease-in-out;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1200px;
+  backdrop-filter: blur(15px);
+ 
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+nav svg {
+  display: block;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+nav svg:hover {
+  color: rgb(204, 80, 80);
+}
+
+nav .menuItems {
+  display: none;
+}
+
+nav .menuItems button {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+nav .menuItems button:hover {
+  color:rgb(197, 51, 51);
+}
+
+nav .menuItems li a:hover::before {
+  color: #290d91;
+  transition: all 0.5s ease-in-out;
+}
+
+.hide-nav {
+  transform: translateY(-100%);
+}
+.show-nav {
+  transform: translateY(0);
+  z-index: 33399;
+}
+
+.nav-home {
+  background: none !important;
+  border: none !important;
+  backdrop-filter: blur(0) !important;
+}
+
+@media screen and (min-width: 900px) {
+  nav .menuItems {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    column-gap: 2rem;
+    text-align: center;
+  }
+
+  nav svg {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.section-center{
+    max-width:1200px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+
+.show-sidebar{
+    transform: translateX(0);
+}
+
+.hide-sidebar{
+  transform: translateX(-100%);
+}
