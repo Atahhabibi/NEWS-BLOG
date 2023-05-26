@@ -1,5 +1,6 @@
 
 import { createContext ,useContext,useReducer,useState} from "react";
+import { getItemsToStorage } from "./locatStore";
 
 const AppContext=createContext();
 
@@ -8,7 +9,9 @@ export const AppProvider=({children})=>{
 
     const [query, setQuery] = useState('World news');
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-    const [news, setNews] = useState([])
+    const [news, setNews] = useState([]);
+
+    
 
     const contextValue={
         query,
